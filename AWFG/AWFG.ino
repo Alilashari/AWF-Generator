@@ -1,15 +1,11 @@
 /*
 Author: Muhammad Ali lashari
 
+https://github.com/Alilashari/AWF-Generator
+
 This code was designed to work on a Teensy 3.2 board. It will generate DDS PWM or square waves at ouputs 5,6,9,10,20 and 21
 All parameters are set via serial messages.
  */
-
-
-
-
-
-
 
 #include <TimerThree.h> //import Timer3 library -- used for generating timed interrupts 
 #include "WF.h" //include header file that holds the waveform arrays
