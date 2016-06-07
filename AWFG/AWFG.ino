@@ -111,7 +111,7 @@ void loop(void) {
     temp = Serial.readStringUntil(','); //Read buffer data till , (comma) character
     if (temp.substring(0, 1) == "S") { //If first character of message is S, then stop all outputs
 brk:
-      //Timer3.stop(); // Stop interrupt timer
+      Timer3.stop(); // Stop interrupt timer
       Serial.println("timer stopped");
       analogWrite(5, 255); // set all ouptuts high, PCB outputs low
       analogWrite(6, 255);

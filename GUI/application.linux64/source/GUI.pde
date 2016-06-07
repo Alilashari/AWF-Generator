@@ -1,3 +1,14 @@
+/*
+Author: Muhammad Ali lashari
+
+https://github.com/Alilashari/AWF-Generator
+
+This code was designed for the Processing environment version 3.0.2 and using the ControlP5 library version 2.2.6.
+The code uses various GUI elements to construct Serial messages to send to the Teensy.
+
+*/
+
+
 import controlP5.*;
 import java.util.*;
 import processing.serial.*;
@@ -112,18 +123,22 @@ void setup() {
   myTextarea = cp5.addTextarea("txt")
                   .setPosition(10,100)
                   .setSize(800,400)
-                  .setFont(createFont("arial",12))
+                  .setFont(createFont("arial",14))
                   .setLineHeight(14)
                   .setColor(color(255))
                   .setColorBackground(color(0,0))
                   .setColorForeground(color(0,0));
                   ;
-  myTextarea.setText("Welcome to the Arbitrary Waveform Generator V1.0. Please read the attached README.pdf fully before using the physical module. \n"
+  myTextarea.setText("Welcome to the Arbitrary Waveform Generator V1.0.\n"
   + "\nStep 1: Choose the Teensy COM port from the drop down menu on the top right.\n"
-  + "\nStep 2: Select your desired Waveform from the Tabs above.\n"
-  + "\nStep 3: \nFor Square, Sine, Triangle and Sawtooth Waveforms:"
+  + "If the LED on the Teensy goes from flashing to solid, you have successfully established communication and can proceed further.\n"
+  + "\nStep 2: Connect output cables to the appropriate connectors. \n"
+  + "\nStep 3: Connect yout power supply to VIN (50 - 550 VDC) and switch it on.\n"
+  + "\nStep 4: Select your desired waveform from the tabs above.\n"
+  + "\nStep 5: \nFor Square, Sine, Triangle and Sawtooth Waveforms:"
   +"\nEnter the desired frequency and select the direction, number of phases and overlap mode if applicable."
   +"\nOnce all the parameters have been entered, click on SET to activate signal generation.\n"
+  +"\nClick on Extended Operation if you wish to use the board for long periods of time.\n"
   +"\nFor Ramp mode:"
   +"\nEnter the Ramp Duration in milliseconds, and the start and end duty cycles in terms of percentage of VIN i.e 0 to 100"
   +"\nClick on SET to have the output stabilise to the start duty cycle. When ready, click on TRIGGER to activate the ramp."
