@@ -42,7 +42,10 @@ When the Teensy is not powered, all outputs are pulled up to Vin by default. The
 
 ### Getting Started
 
-1. Navigate into GUI folder, and download the appropriate application folder for your system.  
+1. Go to https://www.pjrc.com/teensy/td_download.html and download the driver.
+    If you only need to run the GUI and do not care to modify the Teensy code, download just the *Windows Serial Driver* from *Other Files* on the left.
+    Else, first install Arduino from https://www.arduino.cc/en/Main/Software , then install the Teensyduino software from the above link. The Teensyduino software includes the serial driver and need not be installed seperately. You will find the teensy code in the AWFG folder.
+2. Navigate into GUI folder, and download the appropriate application folder for your system.  
     *The Windows64-J application has Java packaged into     it, however all the others require JRE to be            preinstalled on your system.*
-1. Connect the Teensy to the computer via USB.
-2. Launch the GUI application and follow the instructions displayed.
+3. Connect the Teensy to the computer via USB.
+4. Launch the GUI application and follow the instructions displayed.
